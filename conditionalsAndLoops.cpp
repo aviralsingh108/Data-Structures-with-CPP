@@ -45,8 +45,22 @@ int main()
     // cout << sum << endl;
 
     // Fahrenheit to Celsius
-    float f, c;
-    cin >> f;
-    c = ((f - 32) * 5) / 9;
-    cout << "Converting Fahrenheit to Celsius, Celsius reuslt is " << c;
+    // float f, c;
+    // cin >> f;
+    // c = ((f - 32) * 5) / 9;
+    // cout << "Converting Fahrenheit to Celsius, Celsius reuslt is " << c;
+
+    // Prime No
+    int n, i = 2, f = 0;
+    cin >> n;
+    while (i < n)
+    {
+        if (n % i == 0)
+            f = 1;
+        i++;
+    }
+    if (f == 0)
+        cout << "Prime";
+    else
+        cout << "Not Prime";
 }
