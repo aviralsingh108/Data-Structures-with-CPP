@@ -51,16 +51,32 @@ int main()
     // cout << "Converting Fahrenheit to Celsius, Celsius reuslt is " << c;
 
     // Prime No
-    int n, i = 2, f = 0;
+    // int n, i = 2, f = 0;
+    // cin >> n;
+    // while (i < n)
+    // {
+    //     if (n % i == 0)
+    //         f = 1;
+    //     i++;
+    // }
+    // if (f == 0)
+    //     cout << "Prime";
+    // else
+    //     cout << "Not Prime";
+
+    // Patterns
+    //  4 X 4
+    int n, i = 0;
     cin >> n;
     while (i < n)
     {
-        if (n % i == 0)
-            f = 1;
+        int j = 0;
+        while (j < n)
+        {
+            cout << "* ";
+            j++;
+        }
         i++;
+        cout << endl;
     }
-    if (f == 0)
-        cout << "Prime";
-    else
-        cout << "Not Prime";
 }
