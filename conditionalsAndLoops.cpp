@@ -35,12 +35,18 @@ int main()
     // cout << sum << endl;
 
     // sum of all even numbers
-    int n, i = 2, sum = 0;
-    cin >> n;
-    while (i <= n)
-    {
-        sum += i;
-        i += 2;
-    }
-    cout << sum << endl;
+    // int n, i = 2, sum = 0;
+    // cin >> n;
+    // while (i <= n)
+    // {
+    //     sum += i;
+    //     i += 2;
+    // }
+    // cout << sum << endl;
+
+    // Fahrenheit to Celsius
+    float f, c;
+    cin >> f;
+    c = ((f - 32) * 5) / 9;
+    cout << "Converting Fahrenheit to Celsius, Celsius reuslt is " << c;
 }
