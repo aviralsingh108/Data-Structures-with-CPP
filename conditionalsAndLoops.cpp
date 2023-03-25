@@ -66,6 +66,21 @@ int main()
 
     // Patterns
     //  4 X 4
+    // int n, i = 0;
+    // cin >> n;
+    // while (i < n)
+    // {
+    //     int j = 0;
+    //     while (j < n)
+    //     {
+    //         cout << "* ";
+    //         j++;
+    //     }
+    //     i++;
+    //     cout << endl;
+    // }
+
+    // 111 222 333...
     int n, i = 0;
     cin >> n;
     while (i < n)
@@ -73,7 +88,7 @@ int main()
         int j = 0;
         while (j < n)
         {
-            cout << "* ";
+            cout << i + 1 << " ";
             j++;
         }
         i++;
