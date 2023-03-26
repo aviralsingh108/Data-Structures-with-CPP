@@ -142,15 +142,31 @@ int main()
     // }
 
     // 1 23 345 4567
+    // int n, i = 1;
+    // cin >> n;
+    // while (i <= n)
+    // {
+    //     int j = 0;
+    //     while (j < i)
+    //     {
+    //         cout << i + j << " ";
+    //         j++;
+    //     }
+    //     i++;
+    //     cout << endl;
+    // }
+
+    // 1 21 321 4321
     int n, i = 1;
     cin >> n;
     while (i <= n)
     {
-        int j = 0;
+        int j = 0, value = i;
         while (j < i)
         {
-            cout << i + j << " ";
+            cout << value << " ";
             j++;
+            value--;
         }
         i++;
         cout << endl;
