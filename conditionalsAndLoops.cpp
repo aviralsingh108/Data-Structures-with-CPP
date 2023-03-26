@@ -96,16 +96,31 @@ int main()
     // }
 
     // 123 456 789
-    int n, i = 0, k = 1;
+    // int n, i = 0, k = 1;
+    // cin >> n;
+    // while (i < n)
+    // {
+    //     int j = 0;
+    //     while (j < n)
+    //     {
+    //         cout << k << " ";
+    //         j++;
+    //         k++;
+    //     }
+    //     i++;
+    //     cout << endl;
+    // }
+
+    // * ** *** *** ****
+    int n, i = 0;
     cin >> n;
     while (i < n)
     {
         int j = 0;
-        while (j < n)
+        while (j <= i)
         {
-            cout << k << " ";
+            cout << "* ";
             j++;
-            k++;
         }
         i++;
         cout << endl;
