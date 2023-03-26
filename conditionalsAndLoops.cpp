@@ -173,17 +173,34 @@ int main()
     // }
 
     // AAA BBB CCC
+    // int n, i = 0;
+    // cin >> n;
+    // while (i < n)
+    // {
+    //     int j = 0;
+    //     char ch = 'A';
+    //     ch = ch + i;
+    //     while (j < n)
+    //     {
+    //         cout  << ch << " ";
+    //         j++;
+    //     }
+    //     i++;
+    //     cout << endl;
+    // }
+
+    // A BC DEF GHIJ
     int n, i = 0;
+    char ch = 'A';
     cin >> n;
     while (i < n)
     {
         int j = 0;
-        char ch = 'A';
-        ch = ch + i;
-        while (j < n)
+        while (j <= i)
         {
             cout << ch << " ";
             j++;
+            ch++;
         }
         i++;
         cout << endl;
