@@ -190,13 +190,30 @@ int main()
     // }
 
     // A BC DEF GHIJ
-    int n, i = 0;
-    char ch = 'A';
+    // int n, i = 0;
+    // char ch = 'A';
+    // cin >> n;
+    // while (i < n)
+    // {
+    //     int j = 0;
+    //     while (j <= i)
+    //     {
+    //         cout << ch << " ";
+    //         j++;
+    //         ch++;
+    //     }
+    //     i++;
+    //     cout << endl;
+    // }
+
+    // D CD BCD ABCD
+    int n, i = 1;
     cin >> n;
-    while (i < n)
+    while (i <= n)
     {
         int j = 0;
-        while (j <= i)
+        char ch = 'A' + n - i;
+        while (j < i)
         {
             cout << ch << " ";
             j++;
