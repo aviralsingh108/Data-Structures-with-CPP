@@ -207,17 +207,36 @@ int main()
     // }
 
     // D CD BCD ABCD
-    int n, i = 1;
+    // int n, i = 1;
+    // cin >> n;
+    // while (i <= n)
+    // {
+    //     int j = 0;
+    //     char ch = 'A' + n - i;
+    //     while (j < i)
+    //     {
+    //         cout << ch << " ";
+    //         j++;
+    //         ch++;
+    //     }
+    //     i++;
+    //     cout << endl;
+    // }
+
+    //___* __** _*** ****
+    int n, i = 0;
+    char ch = 'A';
     cin >> n;
-    while (i <= n)
+    while (i < n)
     {
-        int j = 0;
-        char ch = 'A' + n - i;
-        while (j < i)
+        int j = 1;
+        while (j <= n)
         {
-            cout << ch << " ";
+            if (n - j <= i)
+                cout << "* ";
+            else
+                cout << "  ";
             j++;
-            ch++;
         }
         i++;
         cout << endl;
