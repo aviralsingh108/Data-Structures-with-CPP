@@ -157,16 +157,33 @@ int main()
     // }
 
     // 1 21 321 4321
-    int n, i = 1;
+    // int n, i = 1;
+    // cin >> n;
+    // while (i <= n)
+    // {
+    //     int j = 0, value = i;
+    //     while (j < i)
+    //     {
+    //         cout << value << " ";
+    //         j++;
+    //         value--;
+    //     }
+    //     i++;
+    //     cout << endl;
+    // }
+
+    // AAA BBB CCC
+    int n, i = 0;
     cin >> n;
-    while (i <= n)
+    while (i < n)
     {
-        int j = 0, value = i;
-        while (j < i)
+        int j = 0;
+        char ch = 'A';
+        ch = ch + i;
+        while (j < n)
         {
-            cout << value << " ";
+            cout << ch << " ";
             j++;
-            value--;
         }
         i++;
         cout << endl;
