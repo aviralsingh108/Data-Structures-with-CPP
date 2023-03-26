@@ -81,15 +81,31 @@ int main()
     // }
 
     // 111 222 333...
-    int n, i = 0;
+    // int n, i = 0;
+    // cin >> n;
+    // while (i < n)
+    // {
+    //     int j = 0;
+    //     while (j < n)
+    //     {
+    //         cout << i + 1 << " ";
+    //         j++;
+    //     }
+    //     i++;
+    //     cout << endl;
+    // }
+
+    // 123 456 789
+    int n, i = 0, k = 1;
     cin >> n;
     while (i < n)
     {
         int j = 0;
         while (j < n)
         {
-            cout << i + 1 << " ";
+            cout << k << " ";
             j++;
+            k++;
         }
         i++;
         cout << endl;
