@@ -224,19 +224,55 @@ int main()
     // }
 
     //___* __** _*** ****
+    // int n, i = 0;
+    // char ch = 'A';
+    // cin >> n;
+    // while (i < n)
+    // {
+    //     int j = 1;
+    //     while (j <= n)
+    //     {
+    //         if (n - j <= i)
+    //             cout << "* ";
+    //         else
+    //             cout << "  ";
+    //         j++;
+    //     }
+    //     i++;
+    //     cout << endl;
+    // }
+
+    //___* __** _*** ****
+    // int n, i = 0;
+    // cin >> n;
+    // while (i < n)
+    // {
+    //     int j = 1;
+    //     while (j <= n)
+    //     {
+    //         if (n - j <= i)
+    //             cout << "* ";
+    //         else
+    //             cout << "  ";
+    //         j++;
+    //     }
+    //     i++;
+    //     cout << endl;
+    // }
+
+    //**** ***_ **__ *___
     int n, i = 0;
-    char ch = 'A';
     cin >> n;
     while (i < n)
     {
-        int j = 1;
-        while (j <= n)
+        int j = n;
+        while (j > 0)
         {
-            if (n - j <= i)
+            if (j > i)
                 cout << "* ";
             else
-                cout << "  ";
-            j++;
+                cout << " ";
+            j--;
         }
         i++;
         cout << endl;
