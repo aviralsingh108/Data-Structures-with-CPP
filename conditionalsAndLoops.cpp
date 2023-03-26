@@ -112,14 +112,44 @@ int main()
     // }
 
     // * ** *** *** ****
-    int n, i = 0;
+    // int n, i = 0;
+    // cin >> n;
+    // while (i < n)
+    // {
+    //     int j = 0;
+    //     while (j <= i)
+    //     {
+    //         cout << "* ";
+    //         j++;
+    //     }
+    //     i++;
+    //     cout << endl;
+    // }
+
+    // 1 22 333 4444 5555
+    // int n, i = 0;
+    // cin >> n;
+    // while (i < n)
+    // {
+    //     int j = 0;
+    //     while (j <= i)
+    //     {
+    //         cout << i + 1 << " ";
+    //         j++;
+    //     }
+    //     i++;
+    //     cout << endl;
+    // }
+
+    // 1 23 345 4567
+    int n, i = 1;
     cin >> n;
-    while (i < n)
+    while (i <= n)
     {
         int j = 0;
-        while (j <= i)
+        while (j < i)
         {
-            cout << "* ";
+            cout << i + j << " ";
             j++;
         }
         i++;
