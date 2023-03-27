@@ -284,10 +284,10 @@ int main()
     while (i < n)
     {
         int j = n;
-        while (j > n - i)
+        while (j > 0)
         {
-            if (i == (n - j))
-                cout << " ";
+            if (n - j < i)
+                cout << "  ";
             else
                 cout << i + 1 << " ";
             j--;
