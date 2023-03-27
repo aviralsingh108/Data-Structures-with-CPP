@@ -279,18 +279,54 @@ int main()
     // }
 
     // 1111 222 33 4
-    int n, i = 0;
+    // int n, i = 0;
+    // cin >> n;
+    // while (i < n)
+    // {
+    //     int j = n;
+    //     while (j > 0)
+    //     {
+    //         if (n - j < i)
+    //             cout << "  ";
+    //         else
+    //             cout << i + 1 << " ";
+    //         j--;
+    //     }
+    //     i++;
+    //     cout << endl;
+    // }
+
+    // ___1___ __121__ _12321_ 1234321
+    int n, i = 1;
     cin >> n;
-    while (i < n)
+    while (i <= n)
     {
-        int j = n;
-        while (j > 0)
+        int j = 1, a = 1, b = 1;
+        while (j <= (2 * n - 1))
         {
-            if (n - j < i)
-                cout << "  ";
-            else
-                cout << i + 1 << " ";
-            j--;
+            if (j <= n)
+            {
+                if (j <= n - i)
+                {
+                    cout << "  ";
+                }
+                else
+                {
+                    cout << a << " ";
+                    a++;
+                }
+            }
+            else if (j > n)
+            {
+                if (b < i)
+                {
+                    cout << b << " ";
+                    b++;
+                }
+                else
+                    cout << "  ";
+            }
+            j++;
         }
         i++;
         cout << endl;
