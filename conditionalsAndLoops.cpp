@@ -261,17 +261,35 @@ int main()
     // }
 
     //**** ***_ **__ *___
+    // int n, i = 0;
+    // cin >> n;
+    // while (i < n)
+    // {
+    //     int j = n;
+    //     while (j > 0)
+    //     {
+    //         if (j > i)
+    //             cout << "* ";
+    //         else
+    //             cout << " ";
+    //         j--;
+    //     }
+    //     i++;
+    //     cout << endl;
+    // }
+
+    // 1111 222 33 4
     int n, i = 0;
     cin >> n;
     while (i < n)
     {
         int j = n;
-        while (j > 0)
+        while (j > n - i)
         {
-            if (j > i)
-                cout << "* ";
-            else
+            if (i == (n - j))
                 cout << " ";
+            else
+                cout << i + 1 << " ";
             j--;
         }
         i++;
