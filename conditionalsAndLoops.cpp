@@ -297,38 +297,56 @@ int main()
     // }
 
     // ___1___ __121__ _12321_ 1234321
-    int n, i = 1;
+    // int n, i = 1;
+    // cin >> n;
+    // while (i <= n)
+    // {
+    //     int j = 1, a = 1, b = 1;
+    //     while (j <= (2 * n - 1))
+    //     {
+    //         if (j <= n)
+    //         {
+    //             if (j <= n - i)
+    //             {
+    //                 cout << "  ";
+    //             }
+    //             else
+    //             {
+    //                 cout << a << " ";
+    //                 a++;
+    //             }
+    //         }
+    //         else if (j > n)
+    //         {
+    //             if (b < i)
+    //             {
+    //                 cout << b << " ";
+    //                 b++;
+    //             }
+    //             else
+    //                 cout << "  ";
+    //         }
+    //         j++;
+    //     }
+    //     i++;
+    //     cout << endl;
+    // }
+
+    // * ** *** **** using one loop
+    int n;
     cin >> n;
-    while (i <= n)
+    for (int i = 1, j = 1; i <= n;)
     {
-        int j = 1, a = 1, b = 1;
-        while (j <= (2 * n - 1))
+        if (i == j)
         {
-            if (j <= n)
-            {
-                if (j <= n - i)
-                {
-                    cout << "  ";
-                }
-                else
-                {
-                    cout << a << " ";
-                    a++;
-                }
-            }
-            else if (j > n)
-            {
-                if (b < i)
-                {
-                    cout << b << " ";
-                    b++;
-                }
-                else
-                    cout << "  ";
-            }
-            j++;
+            cout << "* " << endl;
+            j = 1;
+            i++;
         }
-        i++;
-        cout << endl;
+        else if (j < i)
+        {
+            j++;
+            cout << "* ";
+        }
     }
 }
