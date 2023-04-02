@@ -333,20 +333,43 @@ int main()
     // }
 
     // * ** *** **** using one loop
+    // int n;
+    // cin >> n;
+    // for (int i = 1, j = 1; i <= n;)
+    // {
+    //     if (i == j)
+    //     {
+    //         cout << "* " << endl;
+    //         j = 1;
+    //         i++;
+    //     }
+    //     else if (j < i)
+    //     {
+    //         j++;
+    //         cout << "* ";
+    //     }
+    // }
+
+    // 1234554321 1234**4321 123****321 12******21 1********1
     int n;
     cin >> n;
-    for (int i = 1, j = 1; i <= n;)
+    for (int i = 1; i <= n; i++)
     {
-        if (i == j)
+        for (int x = 1; x <= n - (i - 1); x++)
         {
-            cout << "* " << endl;
-            j = 1;
-            i++;
+            cout << x << " ";
         }
-        else if (j < i)
+        if ((i - 1) > 0)
         {
-            j++;
-            cout << "* ";
+            for (int y = 1; y <= 2 * (i - 1); y++)
+            {
+                cout << "* ";
+            }
         }
+        for (int z = n - (i - 1); z > 0; z--)
+        {
+            cout << z << " ";
+        }
+        cout << endl;
     }
 }
