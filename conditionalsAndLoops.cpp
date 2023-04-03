@@ -382,20 +382,35 @@ int main()
     // cout << ~a;
 
     // Fibonacci Series
-    int n, a = 0, b = 1;
+    // int n, a = 0, b = 1;
+    // cin >> n;
+    // if (n == 1)
+    //     cout << a;
+    // else if (n == 2)
+    //     cout << a << " " << b;
+    // else
+    // {
+    //     cout << a << " " << b << " ";
+    //     for (int i = 2; i < n; i++)
+    //     {
+    //         cout << a + b << " ";
+    //         b = a + b;
+    //         a = b - a;
+    //     }
+    // }
+
+    int n, flag = 0;
     cin >> n;
-    if (n == 1)
-        cout << a;
-    else if (n == 2)
-        cout << a << " " << b;
-    else
+
+    for (int i = 2; i < n; i++)
     {
-        cout << a << " " << b << " ";
-        for (int i = 2; i < n; i++)
+        if (n % i == 0)
         {
-            cout << a + b << " ";
-            b = a + b;
-            a = b - a;
+            cout << "Not Prime";
+            flag = 1;
+            break;
         }
     }
+    if (flag == 0)
+        cout << "Prime";
 }
