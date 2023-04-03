@@ -351,25 +351,51 @@ int main()
     // }
 
     // 1234554321 1234**4321 123****321 12******21 1********1
-    int n;
+    // int n;
+    // cin >> n;
+    // for (int i = 1; i <= n; i++)
+    // {
+    //     for (int x = 1; x <= n - (i - 1); x++)
+    //     {
+    //         cout << x << " ";
+    //     }
+    //     if ((i - 1) > 0)
+    //     {
+    //         for (int y = 1; y <= 2 * (i - 1); y++)
+    //         {
+    //             cout << "* ";
+    //         }
+    //     }
+    //     for (int z = n - (i - 1); z > 0; z--)
+    //     {
+    //         cout << z << " ";
+    //     }
+    //     cout << endl;
+    // }
+
+    // Logical and Bitwise Operators
+    // int a = 5, b = 10;
+    // cout << (a | b) << endl;  // 15
+    // cout << (a || b) << endl; // 1
+    // cout << (a & b) << endl;  // 0
+    // cout << (a && b) << endl; // 1
+    // cout << ~a;
+
+    // Fibonacci Series
+    int n, a = 0, b = 1;
     cin >> n;
-    for (int i = 1; i <= n; i++)
+    if (n == 1)
+        cout << a;
+    else if (n == 2)
+        cout << a << " " << b;
+    else
     {
-        for (int x = 1; x <= n - (i - 1); x++)
+        cout << a << " " << b << " ";
+        for (int i = 2; i < n; i++)
         {
-            cout << x << " ";
+            cout << a + b << " ";
+            b = a + b;
+            a = b - a;
         }
-        if ((i - 1) > 0)
-        {
-            for (int y = 1; y <= 2 * (i - 1); y++)
-            {
-                cout << "* ";
-            }
-        }
-        for (int z = n - (i - 1); z > 0; z--)
-        {
-            cout << z << " ";
-        }
-        cout << endl;
     }
 }
