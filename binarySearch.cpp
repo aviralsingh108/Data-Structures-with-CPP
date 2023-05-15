@@ -7,7 +7,7 @@ int main()
     int start = 0;
     int end = 5;
     int res = 0;
-    int mid = (start + end) / 2;
+    int mid = start + (end - start) / 2;
     while (start <= end)
     {
         cout << "Start End Mid: " << start << " " << end << " " << mid << endl;
@@ -24,7 +24,7 @@ int main()
         {
             end = mid - 1;
         }
-        mid = (start + end) / 2;
+        mid = start + (end - start) / 2;
     }
     if (res == 1)
     {
