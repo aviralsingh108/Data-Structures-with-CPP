@@ -47,4 +47,15 @@ int main()
     {
         cout << (*i).second;
     }
+
+    cout << endl
+         << "+++++++++++++++++" << endl;
+    vector<int> v;
+    v.push_back(1);
+    v.push_back(2);
+    v.push_back(3);
+    v.push_back(4);
+    v.push_back(5);
+    cout << binary_search(v.begin(), v.end(), -1);
+    cout << binary_search(v.begin(), v.end(), 2);
 }
