@@ -58,4 +58,25 @@ int main()
     v.push_back(5);
     cout << binary_search(v.begin(), v.end(), -1);
     cout << binary_search(v.begin(), v.end(), 2);
+    cout << endl
+         << *v.begin();
+
+    string abcd = "abcd";
+    reverse(abcd.begin(), abcd.end());
+    cout << abcd;
+
+    rotate(v.begin(), v.begin() + 1, v.end());
+    for (auto k : v)
+    {
+        cout << k << endl;
+    }
+
+    cout << "@@@@@@@@@@@@@@@@@" << endl;
+    int arr[] = {1, 2, 3, 4, 5};
+    int n = 5;
+    rotate(arr + 1, arr + 2, arr + n);
+    for (int i = 0; i < n; i++)
+    {
+        cout << arr[i] << " ";
+    }
 }
